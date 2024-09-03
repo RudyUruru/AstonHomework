@@ -2,6 +2,10 @@ package org.example.collection;
 
 public class LinkedList<E> {
 
+    private Node<E> first;
+    private Node<E> last;
+    private int size = 0;
+
     private static class Node<E> {
         E item;
         Node<E> prev;
