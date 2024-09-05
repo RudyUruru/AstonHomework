@@ -2,7 +2,7 @@ package org.example.inheritance;
 
 public class Hero {
 
-    private String name;
+    private final String name;
 
     public Hero(String name) {
         this.name = name;
