@@ -1,2 +1,5 @@
-[ДЗ по наследованию и полиморфизму](https://github.com/RudyUruru/AstonHomework/pull/2)
-[ДЗ по коллекцим](https://github.com/RudyUruru/AstonHomework/pull/1)
+# ДЗ по темам
+
+1. [Наследование и полиморфизм](https://github.com/RudyUruru/AstonHomework/pull/2)
+
+2. [Коллекции](https://github.com/RudyUruru/AstonHomework/pull/1)
