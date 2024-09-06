@@ -1,19 +1,23 @@
 package org.example.inheritance;
 
-public class Hero {
+public abstract class Hero {
 
     private final String name;
+    private final int damage;
 
-    public Hero(String name) {
+    public abstract void attackEnemy(Enemy target);
+
+    public Hero(String name, int damage) {
         this.name = name;
+        this.damage = damage;
     }
 
     public String getName() {
         return name;
     }
 
-    public void attackEnemy(Hero target) {
-        System.out.println(name + " attack " + target.name);
+    public int getDamage() {
+        return damage;
     }
 
 }
