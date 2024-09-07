@@ -5,6 +5,10 @@ import java.util.Comparator;
 public class MyCollections {
 
     public static <E> void bubbleSort(MyList<E> list, Comparator<? super E> comparator) {
+        if (list == null || comparator == null) {
+            throw new NullPointerException("List or comparator can't be null!");
+        }
+
         boolean swapped;
         int n = list.size();
 
