@@ -31,7 +31,7 @@ public class MyLinkedList<E> implements MyList<E> {
 
     @Override
     public void addAll(Collection<E> collection) {
-        for(E item : collection) {
+        for (E item : collection) {
             this.add(item);
         }
     }
@@ -68,9 +68,17 @@ public class MyLinkedList<E> implements MyList<E> {
     private Node<E> getByIndex(int index) {
         checkBounds(index);
 
-        Node<E> target = first.next;
-        for (int i = 0; i < index; i++) {
-            target = target.next;
+        Node<E> target;
+        if (index < size / 2) {
+            target = first.next;
+            for (int i = 0; i < index; i++) {
+                target = target.next;
+            }
+        } else {
+            target = last.prev;
+            for (int i = size - 1; i > index; i--) {
+                target = target.prev;
+            }
         }
 
         return target;
